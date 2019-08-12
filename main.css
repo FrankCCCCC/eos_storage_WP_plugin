@@ -1,0 +1,16 @@
+.table_div{
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.table_ele{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: aquamarine;
+}
+
+.test{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: aquamarine;
+}
