@@ -1,0 +1,106 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "article",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pkey",
+                    "type": "uint64"
+                },
+                {
+                    "name": "author",
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "content",
+                    "type": "string"
+                },
+                {
+                    "name": "time_upload",
+                    "type": "string"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "articlelist",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "hi",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "upload",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "author",
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "content",
+                    "type": "string"
+                },
+                {
+                    "name": "time_upload",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "articlelist",
+            "type": "articlelist",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "hi",
+            "type": "hi",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "upload",
+            "type": "upload",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "setm",
+            "type": "article",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
