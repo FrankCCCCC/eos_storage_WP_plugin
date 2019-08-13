@@ -1,16 +1,8 @@
 .table_div{
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 1rem;
+    /* margin-left: 3rem; */
 }
-
-.table_ele{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-color: aquamarine;
-}
-
-.test{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-color: aquamarine;
+.pin_content{
+    /* word-wrap: break-word; */
+    word-break: break-word;
 }
