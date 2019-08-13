@@ -28,7 +28,7 @@ const { Api, JsonRpc } = require('eosjs');
 const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig');  // development only
 const fetch = require('node-fetch');                                // node only
 // const rpc = new JsonRpc('http://127.0.0.1:8888', { fetch });
-const rpc = new JsonRpc('http://jungle2.cryptolions.io:80', { fetch });
+const rpc = new JsonRpc('https://eos-jungle.eosblocksmith.io:443', { fetch });
 
 
 async function eos_get_table_rows(code, scope, table, limit){
