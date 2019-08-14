@@ -37,14 +37,15 @@ async function eos_get_table_rows(code, scope, table, limit){
     tableStr = String(table);
     limitNum = String(limit);
 
+    
     const resp = await rpc.get_table_rows({
         json: true,              // Get the response as json
         code: codeStr,     // Contract that we target
         scope: scopeStr,         // Account that owns the data
         table: tableStr,        // Table name
         limit: limitNum,               // Maximum number of rows that we want to get
-        // reverse = false,         // Optional: Get reversed data
-        // show_payer = false,      // Optional: Show ram payer
+        reverse: "true",         // Optional: Get reversed data
+        // show_payer: "true",      // Optional: Show ram payer
     });
     
     console.log(resp.rows);
@@ -58,7 +59,7 @@ async function eos_get_table_rows(code, scope, table, limit){
         var res = {};
         var fetchData = new Promise((resolve, reject) => {
             res = {};
-            res = eos_get_table_rows("jwqnka13noaq", "jwqnka13noaq", "setm", 10);
+            res = eos_get_table_rows("jwqnka13noaq", "jwqnka13noaq", "setm", 1000);
             resolve(res);
         });
         fetchData.then((res) => {

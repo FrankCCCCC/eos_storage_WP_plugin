@@ -1,10 +1,10 @@
 {
-  "main": "src/eosstorage.cpp",
+  "main": "contract/eosstorage.cpp",
   "contract": "eosstorage",
   "include": "",
   "resource": "",
   "cdt": "v1.6.1",
-  "output": "",
+  "output": "contract/eosstorage.wsm",
   "scripts": {
     "build": ""
   },
