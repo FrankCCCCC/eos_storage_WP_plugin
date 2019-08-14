@@ -1,0 +1,11 @@
+{
+  "name": "include.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "include.js",
+  "scripts": {
+    "test": "echo \"Echo from test\""
+  },
+  "author": "",
+  "license": "MIT"
+}
