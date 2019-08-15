@@ -1,6 +1,6 @@
 const Express = require('express');
 const app = Express();
-const port = 4900;
+const port = process.env.PORT || 4900;
 const url = "https://eos-jungle.eosblocksmith.io:443";
 
 const { Api, JsonRpc } = require('eosjs');
@@ -61,6 +61,9 @@ app.listen(port, () => {
             return err;
         });
     }
+    app.get('/', (req, res) => {
+        
+    });
     app.post('/', (req, res) => {
         console.log("Get POST Request");
         console.log(req.query);
