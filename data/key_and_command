@@ -1,0 +1,8 @@
+GCP Init:(In the parent directory of google-cloud-sdk, home directory(~))
+./google-cloud-sdk/bin/gcloud init
+GCP Deploy:
+gcloud beta run deploy --image gcr.io/eos-storage-cloud/eos_storage_cloud_server --platform managed
+GCP Build:
+gcloud builds submit --tag gcr.io/eos-storage-cloud/eos_storage_cloud_server
+URL:
+https://eosstoragecloudserver-vfnkcyau7q-an.a.run.app
