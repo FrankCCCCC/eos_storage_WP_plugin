@@ -13,6 +13,7 @@
     "eosjs": "^20.0.0",
     "eosjs-api": "^7.0.4",
     "express": "^4.17.1",
-    "express-generator": "^4.16.1"
+    "express-generator": "^4.16.1",
+    "ipfs": "^0.37.0"
   }
 }

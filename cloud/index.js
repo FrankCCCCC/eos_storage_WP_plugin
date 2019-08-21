@@ -22,8 +22,6 @@ var hostRpc = {};
 var hostApi = {};
 const app = Express();
 
-
-
 function get_user_struct(account, public_key, private_key){
     return {account: account, public_key: public_key, private_key: private_key};
 }
