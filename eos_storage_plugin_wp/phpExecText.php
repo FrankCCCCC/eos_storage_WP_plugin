@@ -9,9 +9,9 @@
     
     // echo exec('node include.js '.$wallet_name." ".$account_name." ".$key." ".$author." ".$title." ".$content." ".$time_upload);
 
-    $cloud_server_url = "https://eosstoragecloudserver-vfnkcyau7q-an.a.run.app/";
-    // $cloud_sercer_url2 = "https://eosstoragecloudserver-vfnkcyau7q-an.a.run.app/";
-    // $cloud_server_url = "http://localhost:4900/";
+    // $cloud_server_url = "https://eosstoragecloudserver-vfnkcyau7q-an.a.run.app/";
+    
+    $cloud_server_url = "http://localhost:4900/upload";
   function upload($author, $title, $content){
     global $cloud_server_url;
     settype($author, "string");

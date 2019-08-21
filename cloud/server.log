@@ -1,0 +1,246 @@
+
+Wed, 21 Aug 2019 13:37:11 GMT  Set Up Endpoint: https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 13:37:11 GMT  Set Up Contract Account: jwqnka13noaq
+Wed, 21 Aug 2019 13:37:11 GMT  Set Up Contract Account Public Key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 13:37:11 GMT  Set Up Contract Account Private Key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 13:37:11 GMT  Testing config connection...
+Wed, 21 Aug 2019 13:37:11 GMT  Trying to connect https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 13:37:11 GMT  Trying to fetch account info jwqnka13noaq
+Wed, 21 Aug 2019 13:37:11 GMT  Trying to fetch contract raw code and ABI jwqnka13noaq
+Wed, 21 Aug 2019 13:37:13 GMT  Fetching Account Success
+Wed, 21 Aug 2019 13:37:13 GMT  Endpoint Connect Successfully, Connect to Chain_IDe70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473
+Wed, 21 Aug 2019 13:37:13 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 13:37:13 GMT  Fetching Contract Success
+Wed, 21 Aug 2019 13:37:13 GMT  Wasm already Set
+Wed, 21 Aug 2019 13:37:13 GMT  ABI already Set
+Wed, 21 Aug 2019 13:37:13 GMT  Testing Config Connection Done
+Wed, 21 Aug 2019 13:37:13 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 13:37:13 GMT  Set User... Done
+Wed, 21 Aug 2019 13:37:13 GMT  Validate Account jwqnka13noaq
+Wed, 21 Aug 2019 13:37:13 GMT  Trying to get account info jwqnka13noaq
+Wed, 21 Aug 2019 13:37:14 GMT  Getting Account Success, Account has been on BlockChain
+Wed, 21 Aug 2019 13:37:14 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 13:37:14 GMT  Use account: jwqnka13noaq
+Wed, 21 Aug 2019 13:37:14 GMT  Use public key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 13:37:14 GMT  Use private key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 13:37:14 GMT  Here is Node JS and Express running on port 4900
+Wed, 21 Aug 2019 13:39:18 GMT  Set Up Endpoint: https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 13:39:18 GMT  Set Up Contract Account: jwqnka13noaq
+Wed, 21 Aug 2019 13:39:18 GMT  Set Up Contract Account Public Key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 13:39:18 GMT  Set Up Contract Account Private Key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 13:39:18 GMT  Testing config connection...
+Wed, 21 Aug 2019 13:39:18 GMT  Trying to connect https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 13:39:18 GMT  Trying to fetch account info jwqnka13noaq
+Wed, 21 Aug 2019 13:39:18 GMT  Trying to fetch contract raw code and ABI jwqnka13noaq
+Wed, 21 Aug 2019 13:39:19 GMT  Fetching Account Success
+Wed, 21 Aug 2019 13:39:19 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 13:39:19 GMT  Endpoint Connect Successfully, Connect to Chain_IDe70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473
+Wed, 21 Aug 2019 13:39:19 GMT  Fetching Contract Success
+Wed, 21 Aug 2019 13:39:19 GMT  Wasm already Set
+Wed, 21 Aug 2019 13:39:19 GMT  ABI already Set
+Wed, 21 Aug 2019 13:39:19 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 13:39:19 GMT  Testing Config Connection Done
+Wed, 21 Aug 2019 13:39:19 GMT  Set User... Done
+Wed, 21 Aug 2019 13:39:19 GMT  Validate Account jwqnka13noaq
+Wed, 21 Aug 2019 13:39:19 GMT  Trying to get account info jwqnka13noaq
+Wed, 21 Aug 2019 13:39:21 GMT  Getting Account Success, Account has been on BlockChain
+Wed, 21 Aug 2019 13:39:21 GMT  Use account: jwqnka13noaq
+Wed, 21 Aug 2019 13:39:21 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 13:39:21 GMT  Use public key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 13:39:21 GMT  Use private key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 13:39:21 GMT  Here is Node JS and Express running on port 4900
+Wed, 21 Aug 2019 14:01:17 GMT  Set Up Endpoint: https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:01:17 GMT  Set Up Contract Account: jwqnka13noaq
+Wed, 21 Aug 2019 14:01:17 GMT  Set Up Contract Account Public Key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:01:17 GMT  Set Up Contract Account Private Key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:01:17 GMT  Testing config connection...
+Wed, 21 Aug 2019 14:01:17 GMT  Trying to connect https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:01:17 GMT  Trying to fetch account info jwqnka13noaq
+Wed, 21 Aug 2019 14:01:17 GMT  Trying to fetch contract raw code and ABI jwqnka13noaq
+Wed, 21 Aug 2019 14:01:19 GMT  Fetching Account Success
+Wed, 21 Aug 2019 14:01:19 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:01:19 GMT  Endpoint Connect Successfully, Connect to Chain_IDe70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473
+Wed, 21 Aug 2019 14:01:20 GMT  Fetching Contract Success
+Wed, 21 Aug 2019 14:01:20 GMT  Wasm already Set
+Wed, 21 Aug 2019 14:01:20 GMT  ABI already Set
+Wed, 21 Aug 2019 14:01:20 GMT  Testing Config Connection Done
+Wed, 21 Aug 2019 14:01:20 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:01:20 GMT  Set User... Done
+Wed, 21 Aug 2019 14:01:20 GMT  Validate Account jwqnka13noaq
+Wed, 21 Aug 2019 14:01:20 GMT  Trying to get account info jwqnka13noaq
+Wed, 21 Aug 2019 14:01:21 GMT  Getting Account Success, Account has been on BlockChain
+Wed, 21 Aug 2019 14:01:21 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:01:21 GMT  Use account: jwqnka13noaq
+Wed, 21 Aug 2019 14:01:21 GMT  Use public key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:01:21 GMT  Use private key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:01:21 GMT  Here is Node JS and Express running on port 4900
+Wed, 21 Aug 2019 14:01:40 GMT  Recieve GET Request: /
+Wed, 21 Aug 2019 14:01:40 GMT  Already Send Response: Here is EOS Storage Plugin of Wordpress Backend
+Wed, 21 Aug 2019 14:01:49 GMT  Recieve GET Request: /
+Wed, 21 Aug 2019 14:01:49 GMT  Already Send Response: Here is EOS Storage Plugin of Wordpress Backend
+Wed, 21 Aug 2019 14:04:41 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:04:41 GMT  {}
+Wed, 21 Aug 2019 14:04:41 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:04:41 GMT  Set User... Done
+Wed, 21 Aug 2019 14:09:50 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:09:50 GMT  {"author":"php_exe_author","title":"php_exe_title","content":"php_exe_content"}
+Wed, 21 Aug 2019 14:09:50 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:09:50 GMT  Set User... Done
+Wed, 21 Aug 2019 14:11:09 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:11:09 GMT  {}
+Wed, 21 Aug 2019 14:11:09 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:11:09 GMT  Set User... Done
+Wed, 21 Aug 2019 14:12:29 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:12:29 GMT  {}
+Wed, 21 Aug 2019 14:12:29 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:12:29 GMT  Set User... Done
+Wed, 21 Aug 2019 14:14:08 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:14:08 GMT  {}
+Wed, 21 Aug 2019 14:14:08 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:14:08 GMT  Set User... Done
+Wed, 21 Aug 2019 14:24:02 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:24:02 GMT  {"title":"post_T","author":"post_A","content":"post_C"}
+Wed, 21 Aug 2019 14:24:02 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:24:02 GMT  Set User... Done
+Wed, 21 Aug 2019 14:48:32 GMT  Set Up Endpoint: https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:48:32 GMT  Set Up Contract Account: jwqnka13noaq
+Wed, 21 Aug 2019 14:48:32 GMT  Set Up Contract Account Public Key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:48:32 GMT  Set Up Contract Account Private Key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:48:32 GMT  Testing config connection...
+Wed, 21 Aug 2019 14:48:32 GMT  Trying to connect https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:48:32 GMT  Trying to fetch account info jwqnka13noaq
+Wed, 21 Aug 2019 14:48:32 GMT  Trying to fetch contract raw code and ABI jwqnka13noaq
+Wed, 21 Aug 2019 14:48:33 GMT  Endpoint Connect Successfully, Connect to Chain_IDe70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473
+Wed, 21 Aug 2019 14:48:33 GMT  Fetching Account Success
+Wed, 21 Aug 2019 14:48:33 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:48:33 GMT  Fetching Contract Success
+Wed, 21 Aug 2019 14:48:33 GMT  Wasm already Set
+Wed, 21 Aug 2019 14:48:33 GMT  ABI already Set
+Wed, 21 Aug 2019 14:48:33 GMT  Testing Config Connection Done
+Wed, 21 Aug 2019 14:48:33 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:48:33 GMT  Set User... Done
+Wed, 21 Aug 2019 14:48:33 GMT  Validate Account jwqnka13noaq
+Wed, 21 Aug 2019 14:48:33 GMT  Trying to get account info jwqnka13noaq
+Wed, 21 Aug 2019 14:48:34 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:48:34 GMT  Getting Account Success, Account has been on BlockChain
+Wed, 21 Aug 2019 14:48:34 GMT  Use account: jwqnka13noaq
+Wed, 21 Aug 2019 14:48:34 GMT  Use public key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:48:34 GMT  Forming Contract Argument
+Wed, 21 Aug 2019 14:48:34 GMT  Use private key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:48:34 GMT  Contract API Upload
+Wed, 21 Aug 2019 14:48:34 GMT  Calling User_API eos_push_transaction
+Wed, 21 Aug 2019 14:48:34 GMT  Here is Node JS and Express running on port 4900
+Wed, 21 Aug 2019 14:48:46 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:48:46 GMT  HTTP Body: undefined
+Wed, 21 Aug 2019 14:49:22 GMT  Set Up Endpoint: https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:49:22 GMT  Set Up Contract Account Public Key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:49:22 GMT  Set Up Contract Account: jwqnka13noaq
+Wed, 21 Aug 2019 14:49:22 GMT  Set Up Contract Account Private Key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:49:22 GMT  Testing config connection...
+Wed, 21 Aug 2019 14:49:22 GMT  Trying to connect https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:49:22 GMT  Trying to fetch account info jwqnka13noaq
+Wed, 21 Aug 2019 14:49:22 GMT  Trying to fetch contract raw code and ABI jwqnka13noaq
+Wed, 21 Aug 2019 14:49:23 GMT  Endpoint Connect Successfully, Connect to Chain_IDe70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473
+Wed, 21 Aug 2019 14:49:23 GMT  Fetching Account Success
+Wed, 21 Aug 2019 14:49:23 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:49:23 GMT  Fetching Contract Success
+Wed, 21 Aug 2019 14:49:23 GMT  Wasm already Set
+Wed, 21 Aug 2019 14:49:23 GMT  ABI already Set
+Wed, 21 Aug 2019 14:49:23 GMT  Testing Config Connection Done
+Wed, 21 Aug 2019 14:49:23 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:49:23 GMT  Set User... Done
+Wed, 21 Aug 2019 14:49:23 GMT  Validate Account jwqnka13noaq
+Wed, 21 Aug 2019 14:49:23 GMT  Trying to get account info jwqnka13noaq
+Wed, 21 Aug 2019 14:49:24 GMT  Getting Account Success, Account has been on BlockChain
+Wed, 21 Aug 2019 14:49:24 GMT  Use account: jwqnka13noaq
+Wed, 21 Aug 2019 14:49:24 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:49:24 GMT  Use public key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:49:24 GMT  Use private key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:49:24 GMT  Contract API Upload
+Wed, 21 Aug 2019 14:49:24 GMT  Forming Contract Argument
+Wed, 21 Aug 2019 14:49:24 GMT  Calling User_API eos_push_transaction
+Wed, 21 Aug 2019 14:49:24 GMT  Here is Node JS and Express running on port 4900
+Wed, 21 Aug 2019 14:49:27 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:49:27 GMT  HTTP Body: {"title":"post_T","author":"post_A","content":"post_C"}
+Wed, 21 Aug 2019 14:49:27 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:49:27 GMT  Set User... Done
+Wed, 21 Aug 2019 14:49:27 GMT  Call Contract API Action Upload
+Wed, 21 Aug 2019 14:49:27 GMT  Contract API Upload
+Wed, 21 Aug 2019 14:49:27 GMT  Forming Contract Argument
+Wed, 21 Aug 2019 14:49:27 GMT  Calling User_API eos_push_transaction
+Wed, 21 Aug 2019 14:49:32 GMT  Transaction Success:
+Wed, 21 Aug 2019 14:49:32 GMT  Send Response: {"msg":"Upload Success","transaction":{"transaction_id":"df64a76b2abf5dc414149244e2758711c69948614048f0c4abc1918aa0cadf99","processed":{"id":"df64a76b2abf5dc414149244e2758711c69948614048f0c4abc1918aa0cadf99","block_num":45523792,"block_time":"2019-08-21T14:49:33.000","producer_block_id":null,"receipt":{"status":"executed","cpu_usage_us":689,"net_usage_words":19},"elapsed":689,"net_usage":152,"scheduled":false,"action_traces":[{"action_ordinal":1,"creator_action_ordinal":0,"closest_unnotified_ancestor_action_ordinal":0,"receipt":{"receiver":"jwqnka13noaq","act_digest":"52503404b24d9b1a3e5077b226d0c269e505cc3c06d099a5463bcb82c0e00ee6","global_sequence":469992334,"recv_sequence":132,"auth_sequence":[["jwqnka13noaq",150]],"code_sequence":1,"abi_sequence":5},"receiver":"jwqnka13noaq","act":{"account":"jwqnka13noaq","name":"upload","authorization":[{"actor":"jwqnka13noaq","permission":"active"}],"data":{"user":"jwqnka13noaq","author":"post_A","title":"post_T","content":"post_C","time_upload":"2019-08-21T14:49:27.322Z"},"hex_data":"600d9d2318382d7f06706f73745f4106706f73745f5406706f73745f4318323031392d30382d32315431343a34393a32372e3332325a"},"context_free":false,"elapsed":388,"console":"","trx_id":"df64a76b2abf5dc414149244e2758711c69948614048f0c4abc1918aa0cadf99","block_num":45523792,"block_time":"2019-08-21T14:49:33.000","producer_block_id":null,"account_ram_deltas":[{"account":"jwqnka13noaq","delta":174}],"except":null,"error_code":null,"inline_traces":[]}],"account_ram_delta":null,"except":null,"error_code":null}}}
+Wed, 21 Aug 2019 14:52:13 GMT  Set Up Endpoint: https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:52:13 GMT  Set Up Contract Account: jwqnka13noaq
+Wed, 21 Aug 2019 14:52:13 GMT  Set Up Contract Account Public Key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:52:13 GMT  Set Up Contract Account Private Key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:52:13 GMT  Trying to connect https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:52:13 GMT  Testing config connection...
+Wed, 21 Aug 2019 14:52:13 GMT  Trying to fetch account info jwqnka13noaq
+Wed, 21 Aug 2019 14:52:13 GMT  Trying to fetch contract raw code and ABI jwqnka13noaq
+Wed, 21 Aug 2019 14:52:14 GMT  Endpoint Connect Successfully, Connect to Chain_IDe70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473
+Wed, 21 Aug 2019 14:52:14 GMT  Fetching Account Success
+Wed, 21 Aug 2019 14:52:14 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:52:14 GMT  Fetching Contract Success
+Wed, 21 Aug 2019 14:52:14 GMT  Wasm already Set
+Wed, 21 Aug 2019 14:52:14 GMT  ABI already Set
+Wed, 21 Aug 2019 14:52:14 GMT  Testing Config Connection Done
+Wed, 21 Aug 2019 14:52:14 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:52:15 GMT  Set User... Done
+Wed, 21 Aug 2019 14:52:15 GMT  Validate Account jwqnka13noaq
+Wed, 21 Aug 2019 14:52:15 GMT  Trying to get account info jwqnka13noaq
+Wed, 21 Aug 2019 14:52:16 GMT  Getting Account Success, Account has been on BlockChain
+Wed, 21 Aug 2019 14:52:16 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:52:16 GMT  Use account: jwqnka13noaq
+Wed, 21 Aug 2019 14:52:16 GMT  Use public key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:52:16 GMT  Use private key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:52:16 GMT  Here is Node JS and Express running on port 4900
+Wed, 21 Aug 2019 14:52:30 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:52:30 GMT  HTTP Body: {"title":"post_T","author":"post_A","content":"post_C"}
+Wed, 21 Aug 2019 14:52:30 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:52:30 GMT  Set User... Done
+Wed, 21 Aug 2019 14:52:30 GMT  Call Contract API Action Upload
+Wed, 21 Aug 2019 14:52:30 GMT  Contract API Upload
+Wed, 21 Aug 2019 14:52:30 GMT  Forming Contract Argument
+Wed, 21 Aug 2019 14:52:30 GMT  Calling User_API eos_push_transaction
+Wed, 21 Aug 2019 14:52:30 GMT  Forming Data
+Wed, 21 Aug 2019 14:52:30 GMT  Calling EOSJS API api.transact
+Wed, 21 Aug 2019 14:52:36 GMT  Transaction Success:
+Wed, 21 Aug 2019 14:52:36 GMT  Send Response: {"msg":"Upload Success","transaction":{"transaction_id":"b9fcb51a25b4eba73185632352c3750e7897409168bcc639f8a00f6b0749e0a9","processed":{"id":"b9fcb51a25b4eba73185632352c3750e7897409168bcc639f8a00f6b0749e0a9","block_num":45524156,"block_time":"2019-08-21T14:52:36.500","producer_block_id":null,"receipt":{"status":"executed","cpu_usage_us":990,"net_usage_words":19},"elapsed":990,"net_usage":152,"scheduled":false,"action_traces":[{"action_ordinal":1,"creator_action_ordinal":0,"closest_unnotified_ancestor_action_ordinal":0,"receipt":{"receiver":"jwqnka13noaq","act_digest":"6952b69364677f49cce4cd312da262d6becf573d7881dab904597a62dd65f162","global_sequence":469993364,"recv_sequence":133,"auth_sequence":[["jwqnka13noaq",151]],"code_sequence":1,"abi_sequence":5},"receiver":"jwqnka13noaq","act":{"account":"jwqnka13noaq","name":"upload","authorization":[{"actor":"jwqnka13noaq","permission":"active"}],"data":{"user":"jwqnka13noaq","author":"post_A","title":"post_T","content":"post_C","time_upload":"2019-08-21T14:52:30.693Z"},"hex_data":"600d9d2318382d7f06706f73745f4106706f73745f5406706f73745f4318323031392d30382d32315431343a35323a33302e3639335a"},"context_free":false,"elapsed":619,"console":"","trx_id":"b9fcb51a25b4eba73185632352c3750e7897409168bcc639f8a00f6b0749e0a9","block_num":45524156,"block_time":"2019-08-21T14:52:36.500","producer_block_id":null,"account_ram_deltas":[{"account":"jwqnka13noaq","delta":174}],"except":null,"error_code":null,"inline_traces":[]}],"account_ram_delta":null,"except":null,"error_code":null}}}
+Wed, 21 Aug 2019 14:55:11 GMT  Set Up Endpoint: https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:55:11 GMT  Set Up Contract Account: jwqnka13noaq
+Wed, 21 Aug 2019 14:55:11 GMT  Set Up Contract Account Public Key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:55:11 GMT  Set Up Contract Account Private Key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:55:11 GMT  Testing config connection...
+Wed, 21 Aug 2019 14:55:11 GMT  Trying to connect https://eos-jungle.eosblocksmith.io:443
+Wed, 21 Aug 2019 14:55:11 GMT  Trying to fetch account info jwqnka13noaq
+Wed, 21 Aug 2019 14:55:11 GMT  Trying to fetch contract raw code and ABI jwqnka13noaq
+Wed, 21 Aug 2019 14:55:13 GMT  Endpoint Connect Successfully, Connect to Chain_IDe70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473
+Wed, 21 Aug 2019 14:55:13 GMT  Fetching Account Success
+Wed, 21 Aug 2019 14:55:13 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:55:13 GMT  Fetching Contract Success
+Wed, 21 Aug 2019 14:55:13 GMT  Wasm already Set
+Wed, 21 Aug 2019 14:55:13 GMT  ABI already Set
+Wed, 21 Aug 2019 14:55:13 GMT  Testing Config Connection Done
+Wed, 21 Aug 2019 14:55:13 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:55:13 GMT  Set User... Done
+Wed, 21 Aug 2019 14:55:13 GMT  Validate Account jwqnka13noaq
+Wed, 21 Aug 2019 14:55:13 GMT  Trying to get account info jwqnka13noaq
+Wed, 21 Aug 2019 14:55:14 GMT  Getting Account Success, Account has been on BlockChain
+Wed, 21 Aug 2019 14:55:14 GMT  account_name: jwqnka13noaq | created: 2019-08-11T14:20:26.000 | last_code_update: 2019-08-12T11:01:32.500
+Wed, 21 Aug 2019 14:55:14 GMT  Use private key: 5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X
+Wed, 21 Aug 2019 14:55:14 GMT  Use account: jwqnka13noaq
+Wed, 21 Aug 2019 14:55:14 GMT  Use public key: EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E
+Wed, 21 Aug 2019 14:55:14 GMT  Here is Node JS and Express running on port 4900
+Wed, 21 Aug 2019 14:55:16 GMT  Recieve POST Request: /upload
+Wed, 21 Aug 2019 14:55:16 GMT  Setting Up User jwqnka13noaq
+Wed, 21 Aug 2019 14:55:16 GMT  HTTP Body: {"title":"post_T","author":"post_A","content":"post_C"}
+Wed, 21 Aug 2019 14:55:16 GMT  Set User... Done
+Wed, 21 Aug 2019 14:55:16 GMT  Call Contract API Action Upload
+Wed, 21 Aug 2019 14:55:16 GMT  Contract API Upload
+Wed, 21 Aug 2019 14:55:16 GMT  Forming Contract Argument
+Wed, 21 Aug 2019 14:55:16 GMT  Calling User_API eos_push_transaction
+Wed, 21 Aug 2019 14:55:16 GMT  Forming Data
+Wed, 21 Aug 2019 14:55:16 GMT  Calling EOSJS API api.transact
+Wed, 21 Aug 2019 14:55:22 GMT  Transaction Success:
+Wed, 21 Aug 2019 14:55:22 GMT  Send Response: msg= [object Object] Transaction ID= 43a24304bbbfc3c0a0bab35bddd7fc8d89b714e5182c8e5b8c8583d65856fa41

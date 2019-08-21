@@ -1,119 +1,91 @@
+// For build server
 const Express = require('express');
+
+// Functionality
+const Log = require('./src/log.js');
+const Init = require('./src/initializer.js');
+const User = require('./src/user_api.js');
+const Contract = require('./src/contract_api');
+const write_log = Log.write_log;
+const User_API = User.User_API;
+const upload = Contract.upload;
+
+// Some Global Parameter
+var hostConfig = {
+    port: "", // Server Port
+    endpoint: "", // Blockchain Network Endpoint
+    account: "", // Contract Account
+    public_key: "", // Contract Account Public Key
+    private_key: "" // Contract Account Private Key
+}
+var hostRpc = {};
+var hostApi = {};
 const app = Express();
-const port = process.env.PORT || 4900;
-const url = "https://eos-jungle.eosblocksmith.io:443";
-
-const { Api, JsonRpc } = require('eosjs');
-const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig');  // development only
-const fetch = require('node-fetch');                                // node only
-const { TextDecoder, TextEncoder } = require('util');               // node only
-
-// const privateKeys = ["5JdQRKiTgxEvZeVYMz11UN68cSfzYvsUL7bAjbHV7U8hmyJKohr"]; // Local eosjs
-const privateKeys = ["5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X"];//Jungle jwqnka13noaq
-
-const signatureProvider = new JsSignatureProvider(privateKeys);
-// const rpc = new JsonRpc('http://172.17.0.2:8888', { fetch });
-const rpc = new JsonRpc('https://eos-jungle.eosblocksmith.io:443', { fetch });
-const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
 
 
 
-async function eos_push_transaction(account, name, actor, args, expireSeconds){
-    accountStr = String(account);
-    nameStr = String(name);
-    actor = String(actor);
-    expireSecondsNum = Number(expireSeconds);
-
-    const result = await api.transact({
-        actions: [{
-          account: account,
-          name: name,
-          authorization: [{
-            actor: actor,
-            permission: 'active',
-          }],
-          data: args,
-        }]
-      }, {
-        blocksBehind: 3,
-        expireSeconds: expireSeconds,
-      });
-
-      return result;
+function get_user_struct(account, public_key, private_key){
+    return {account: account, public_key: public_key, private_key: private_key};
 }
 
-app.listen(port, () => {
-    async function upload(author, title, content){
-        const contract_account = "jwqnka13noaq";
-        const contract_action = "upload";
-
-        var now = new Date();
-        var time_upload = now.toISOString();
-        
-        var arg = {
-            user: contract_account,
-            author: author,
-            title: title,
-            content: content,
-            time_upload: time_upload
-        };
-
-        // new Promise((resolve, reject) => {
-        //     var re = eos_push_transaction("jwqnka13noaq", "upload", "jwqnka13noaq", arg, 60);
-        //     resolve(re);
-        // }).then((re) => {
-        //     console.log(re);
-        //     return re;
-        // }).catch((err) => {
-        //     console.log(err);
-        //     return err;
-        // });
-
-        var re = await eos_push_transaction(contract_account, contract_action, contract_account, arg, 60);
-        return re;
+app.use(Express.urlencoded({ extended: true }));
+app.get('/', (req, res) => {
+    write_log("Recieve GET Request: /");
+    try{
+        let msg = 'Here is EOS Storage Plugin of Wordpress Backend'; 
+        res.send(msg);
+        write_log("Already Send Response: " + msg);
+    }catch(err){
+        write_log("ERROR: Sending Response Fail");
+        write_log(err);
     }
-    app.use(Express.urlencoded());
-    app.get('/', (req, res) => {
-        res.send('Here is EOS Storage Plugin of Wordpress Backend');
-    });
-    app.post('/', (req, res) => {
-        console.log("Get POST Request");
-        console.log(req.body);
-        const param = req.body;
-        var trx = "none";
-        new Promise((resolve, reject) => {
-            trx = upload(param.author, param.title, param.content, param.time_upload, param.user);
-            resolve(trx);    
-        }).then((trx) => {
-            // var trxStr = JSON.stringify(trx);
-            console.log("Transaction:\n");
-            console.log(trx);
-            var resMsg = {
-                msg: "Upload Success",
-                transaction: trx
-            };
-            res.send(resMsg);
-        }).catch((err) => {
-            // var errStr = JSON.stringify(err);
-            console.log("Transaction Error:\n");
-            console.log(err);
-            var resMsg = {
-                msg: "Upload Fail",
-                transaction: err
-            };
-            res.send(resMsg);
-        })
-        
-    });
-    app.get('/', (req, res) => {
-        console.log("Get GET Request");
-        console.log(req.query);
-        const param = req.query;
-        var trx = "none";
-        trx = upload(param.author, param.title, param.content, param.time_upload, param.user);
-        console.log("TRX: " + trx);
-        res.send(trx);
-    });
-    console.log(`Here is Node JS and Express running on port ${port}`);
-    // upload("cloud", "cloud_T", "cloud_C", "cloud_T", "cloud_U");
+    
 });
+app.post('/upload', (req, res) => {
+    write_log("Recieve POST Request: /upload");
+    write_log("HTTP Body: " + JSON.stringify(req.body));
+    const titleStr = String(req.body.title);
+    const authorStr = String(req.body.author);
+    const contentStr = String(req.body.content);
+    const accountStr = String("jwqnka13noaq");
+    const publicKeyStr = String("EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E");
+    const privateKeyStr = String("5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X");
+    const user_struct = get_user_struct(accountStr, publicKeyStr, privateKeyStr);
+    var trx = "none";
+    const user_api = new User_API(user_struct, hostRpc);;
+
+    new Promise((resolve, reject) => {
+        write_log("Call Contract API Action Upload");
+        trx = upload(user_api, hostConfig, authorStr, titleStr, contentStr);
+        resolve(trx);    
+    }).then((trx) => {
+        write_log("Transaction Success:");
+        var resMsg = {
+            msg: "Upload Success",
+            transaction: trx
+        };
+        write_log("Send Response: msg= " + resMsg + " Transaction ID= " + trx.transaction_id);
+        res.send(resMsg);
+    }).catch((err) => {
+        write_log("ERROR: Transaction Fail");
+        write_log(err);
+        var resMsg = {
+            msg: "Upload Fail",
+            transaction: err
+        };
+        write_log("Send Response: " + JSON.stringify(resMsg));
+        res.send(resMsg);
+    });
+});
+
+async function start_server(){
+    hostRpc = await Init.init();
+    hostConfig = Init.config;
+    hostApi = new User_API(get_user_struct("jwqnka13noaq", "EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E", "5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X"), hostRpc);
+    await hostApi.validate();
+    app.listen(hostConfig.port, () => {
+        write_log(`Here is Node JS and Express running on port ${hostConfig.port}`);
+    });
+}
+
+start_server();
