@@ -19,11 +19,12 @@
     settype($content, "string");
     $postdata = http_build_query(
       array(
-        // 'user' => 'phpExecText',
+        'account' => 'jwqnka13noaq',
         'author' => $author,
         'title' => $title,
         'content' => $content,
-        // 'time_upload' => 'php_exe_time'
+        'private_key' => '5Hse6HU8gt49wA2DSdomT6JujWzzHWbpgm54cf3Ci6qiGdrbB2X',
+        'public_key' => 'EOS5adzeBDm18Qg44reD9BxydmHX8F1tyPsDxCBUxsaWunUjpVp3E'
       )
     );
     

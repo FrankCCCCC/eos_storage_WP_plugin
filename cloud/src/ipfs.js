@@ -1,4 +1,6 @@
+const Log = require('./log.js');
 const IPFS = require('ipfs');
+const write_log = Log.write_log();
 // const node = new IPFS()
 
 // const data = 'Hello, <YOUR NAME HERE>'
@@ -16,7 +18,7 @@ const IPFS = require('ipfs');
 //   })
 // })
 
-async function init(){
+async function main(){
   const node = await IPFS.create();
   const version = await node.version();
 
@@ -29,9 +31,31 @@ async function init(){
   })
 
   console.log('Added file: ', filesAdded[0].path, filesAdded[0].hash);
+  console.log(filesAdded);
 
   const fileBuffer = await node.cat(filesAdded[0].hash);
   console.log('Added file contents: ', fileBuffer.toString());
 }
 
-init();
+main();
+
+exports.IPFS_Node = class IPFS_Node{
+  constructor(){
+
+  }
+
+  async create(){
+    try{
+      this.node = await IPFS.create();
+      this.version = String(this.node.version.version);
+      write_log(`Create IPFS Node with IPFS-JS ${version}`);
+    }catch(err){
+      write_log("ERROR: Create IPFS Node Fail");
+      write_log(err);
+    }
+  }
+
+  async add(path, content){
+    let fileAdded = await ;
+  }
+}

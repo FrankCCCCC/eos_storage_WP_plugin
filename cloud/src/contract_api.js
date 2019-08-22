@@ -19,7 +19,7 @@ exports.upload = async function upload(user_api, hostConfig, author, title, cont
         content: content,
         time_upload: time_upload
     };
-
+    write_log(`Data: ${JSON.stringify(arg)}`);
     write_log("Calling User_API eos_push_transaction");
     var re = await user_api.eos_push_transaction(contract_account, contract_action, arg, 60);
     return re;
