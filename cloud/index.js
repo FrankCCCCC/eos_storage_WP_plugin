@@ -20,6 +20,7 @@ var hostConfig = {
     public_key: "", // Contract Account Public Key
     private_key: "" // Contract Account Private Key
 }
+var real_port = 4900;
 var hostRpc = {};
 var hostApi = {};
 const app = Express();
@@ -149,11 +150,12 @@ app.post('/upload', (req, res) => {
 async function start_server(){
     hostRpc = await Init.init();
     hostConfig = Init.config;
+    real_port = process.env.PORT || hostConfig.port;
     // console.log(hostRpc);
     hostApi = new User_API(get_user_struct(hostConfig.account, hostConfig.public_key, hostConfig.private_key), hostRpc);
     await hostApi.validate();
-    app.listen(hostConfig.port, () => {
-        write_log(`Here is Node JS and Express running on port ${hostConfig.port}`);
+    app.listen(real_port, () => {
+        write_log(`Here is Node JS and Express running on port ${real_port}`);
     });
 }
 

@@ -6,3 +6,4 @@ GCP Build:
 gcloud builds submit --tag gcr.io/eos-storage-cloud/eos_storage_cloud_server
 URL:
 https://eosstoragecloudserver-vfnkcyau7q-an.a.run.app
+https://eosstoragecloudserver-vfnkcyau7q-uc.a.run.app/get_article?account=jwqnka13noaq&author=postman_A&title=postman_T
