@@ -60,16 +60,23 @@ app.all('/get_article', (req, res) => {
             limit: limitNum, 
         });
         let article = {};
+        console.log(table.rows.length);
+        let f = true;
         for(var i = 0; i < table.rows.length; i++){
             // console.log(table.rows[i]);
             if(String(table.rows[i].user) == accountStr && String(table.rows[i].author) == authorStr && String(table.rows[i].title) == titleStr){
+                write_log(`Found Match Article of title=${titleStr}, user=${accountStr}, author=${authorStr}`);
                 article = table.rows[i];
+                let lt = load_page('page.html', article);
+                res.set('Content-Type', 'text/html');
+                res.send(lt);    
+                f = false;
             }
         }
-        
-        let lt = load_page('page.html', article);
-        res.set('Content-Type', 'text/html');
-        res.send(lt);
+        if(f){
+            write_log(`No Match Article of title=${titleStr}, user=${accountStr}, author=${authorStr}`);
+            res.send(`No Match Article of title=${titleStr}, user=${accountStr}, author=${authorStr}`);
+        }
         return table;
     };
     const table = async_get_table();

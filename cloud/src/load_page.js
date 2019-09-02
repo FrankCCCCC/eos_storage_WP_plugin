@@ -9,7 +9,8 @@ exports.load_page = function load_page(file, args){
     write_log('Loading Page Template...Done');
     write_log('Declaring Variables in Template...');
     for(x in args){
-        eval(`var ${x} = \"${args[x]}\"`);
+        write_log(`var ${x} = \"${String(args[x])}\"`);
+        eval(`var ${x} = \"${String(args[x])}\"`);
     }
     write_log('Declaring Variables in Template...Done');
     write_log('Evaluate Template');

@@ -73,8 +73,18 @@ function temp_post($post_ID)  {
   if($is_auto_update == "true"){
     $res = upload($account_name, $public_key, $private_key, $author, $title, $content);
 
-    echo ‘<script type=”text/javascript”>alert(“Success!!”);</script>’;
     // echo $res;
+    $arrRes = json_decode($res, true);
+    $list = get_option('eos_storage_uploaded_article', "");
+    $arrAdd = array(
+      'title' => $title,
+      'link' => $arrRes['link']
+    );
+    array_push($list, $arrAdd);
+    update_option('res', $res);
+    update_option('eos_storage_uploaded_article', $list);
+    // echo ‘<script type=”text/javascript”>alert(“Success!!”);</script>’;
+    
   }
 
   // return $post_ID;
@@ -83,6 +93,19 @@ function temp_post($post_ID)  {
 add_action('publish_post', 'temp_post');
 
 function eos_storage_script_page(){
+  $arr = array(
+    array(
+      'title' => "Test Title",
+      'link' => "https://jjsv"
+    ),
+    array(
+      'title' => "Test Title2",
+      'link' => "https://jjsv222"
+    )
+  );
+  // update_option('eos_storage_uploaded_article', $arr);
+  $res = get_option('res', "");
+  $list = get_option('eos_storage_uploaded_article', "");
   $account_name = get_option('eos_storage_account_name', "");
   $private_key = get_option('eos_storage_private_key', "");
   $public_key = get_option('eos_storage_public_key', "");
@@ -95,12 +118,6 @@ function eos_storage_script_page(){
   
 
   if(array_key_exists("update", $_POST)){
-    
-	  // update_option('eos_storage_account_name', $_POST['account_name']);
-    // update_option('eos_storage_key', $_POST['key']);
-    // update_option('eos_storage_author', $_POST['author']);
-    // update_option('eos_storage_title', $_POST['title']);
-    // update_option('eos_storage_content', $_POST['content']);
     $args = array("post_type" => "post", "s" => $title);
     $query = get_posts( $args );
     // $author = $query->post_author;
@@ -162,6 +179,21 @@ function eos_storage_script_page(){
       
       <input type="submit" name="update" value="Update to EOS" class="button button-primary">
     </form>
+  </div>
+  <div>
+    <h2>Uploaded Articles</h2>
+    <p><?php print $res; ?></p>
+    <table>
+      <tr>
+        <td>Title</td>
+        <td>Link1</td>
+      </tr>
+      <?php 
+        foreach($list as $art){
+          echo '<tr><td>'.$art['title'].'</td><td><a href="'.$art['link'].'">'.$art['link'].'</a></td></tr>';
+        }
+      ?>
+    </table>
   </div>
 <?php
 }
